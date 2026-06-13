@@ -9,9 +9,6 @@ export default function Footer() {
           <a href="https://aksanlabs.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
             aksanlabs.com
           </a>
-          <a href="https://www.linkedin.com/in/patrick-aksan-51235553/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
-            LinkedIn
-          </a>
         </div>
       </div>
     </footer>
