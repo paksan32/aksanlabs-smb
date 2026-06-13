@@ -10,7 +10,6 @@ const services = [
     description:
       'Perfect for freelancers, consultants, coaches, teachers, and anyone who wants a professional online presence. Show the world what you do and make it easy for people to reach you.',
     examples: 'Freelancers · Coaches · Teachers · Artists · Consultants',
-    price: 'Starting at $499',
     color: 'blue',
   },
   {
@@ -20,7 +19,6 @@ const services = [
     description:
       'A professional website for your business that works while you sleep. Customers can find you, learn about your services, book appointments, and contact you — all in one place.',
     examples: 'Restaurants · Salons · Contractors · Retail · Clinics',
-    price: 'Starting at $799',
     color: 'indigo',
   },
   {
@@ -30,7 +28,6 @@ const services = [
     description:
       'Turn your business into an app your customers can download. iOS and Android. Great for booking, loyalty programs, ordering, or giving your customers a direct line to you.',
     examples: 'Gyms · Food Trucks · Studios · Service Providers',
-    price: 'Starting at $2,499',
     color: 'violet',
   },
 ]
@@ -96,15 +93,12 @@ export default function Services() {
                 <div className={`${colors.bg} rounded-xl px-4 py-3 mb-6`}>
                   <p className="text-xs text-slate-500 font-medium">{service.examples}</p>
                 </div>
-                <div className="flex items-center justify-between">
-                  <p className="text-lg font-bold text-slate-800">{service.price}</p>
-                  <a
-                    href="#contact"
-                    className="text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"
-                  >
-                    Get a quote →
-                  </a>
-                </div>
+                <a
+                  href="#contact"
+                  className="block text-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors"
+                >
+                  Get a Quote
+                </a>
               </motion.div>
             )
           })}
