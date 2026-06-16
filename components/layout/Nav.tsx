@@ -10,7 +10,7 @@ export default function Nav() {
         </Link>
         <a
           href="#contact"
-          className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-full transition-colors duration-200 shadow-sm"
+          className="px-5 py-2 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-sm font-semibold rounded-full transition-colors duration-200"
         >
           Book a Free Call
         </a>

@@ -23,7 +23,6 @@ export default function Industries() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="text-blue-600 text-sm font-semibold uppercase tracking-widest mb-3">Any Business. Any Idea.</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">If You Have a Business,<br />We Can Put It Online</h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto">
             We&apos;ve helped businesses across every industry get found, get customers, and grow.
@@ -41,9 +40,9 @@ export default function Industries() {
           ))}
         </div>
 
-        <p className="text-slate-400 text-sm text-center mt-10">
+        <p className="text-slate-600 text-sm text-center mt-10">
           Don&apos;t see your industry?{' '}
-          <a href="#contact" className="text-blue-600 font-semibold hover:underline">
+          <a href="#contact" className="text-blue-600 font-semibold hover:underline text-sm">
             Tell us about your business →
           </a>
         </p>

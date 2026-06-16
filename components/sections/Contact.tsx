@@ -28,7 +28,6 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="text-blue-600 text-sm font-semibold uppercase tracking-widest mb-3">Let&apos;s Talk</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Ready to Get Started?</h2>
           <p className="text-slate-500 text-lg">
             Tell us a little about your business and what you need.
@@ -61,40 +60,44 @@ export default function Contact() {
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-2">Your Name</label>
+                <label htmlFor="name" className="block text-sm font-semibold text-slate-700 mb-2">Your Name</label>
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   required
                   placeholder="Jane Smith"
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
+                <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   required
                   placeholder="jane@yourbusiness.com"
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
                 />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">What type of business do you have?</label>
+              <label htmlFor="business" className="block text-sm font-semibold text-slate-700 mb-2">What type of business do you have?</label>
               <input
+                id="business"
                 type="text"
                 name="business"
                 placeholder="e.g. Hair salon, landscaping, yoga studio..."
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">What are you looking for?</label>
+              <label htmlFor="service" className="block text-sm font-semibold text-slate-700 mb-2">What are you looking for?</label>
               <select
+                id="service"
                 name="service"
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
               >
                 <option value="">Select a service...</option>
                 <option value="personal-website">Personal Website</option>
@@ -104,12 +107,13 @@ export default function Contact() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">Anything else you&apos;d like us to know?</label>
+              <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">Anything else you&apos;d like us to know?</label>
               <textarea
+                id="message"
                 name="message"
                 rows={4}
                 placeholder="Tell us about your business, what you need, or any questions you have..."
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base resize-none"
               />
             </div>
             <button
@@ -118,7 +122,7 @@ export default function Contact() {
             >
               Send My Message
             </button>
-            <p className="text-center text-xs text-slate-400">
+            <p className="text-center text-sm text-slate-500">
               No spam. No sales calls. Just a friendly conversation about your business.
             </p>
           </motion.form>
