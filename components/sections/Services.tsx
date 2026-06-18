@@ -11,6 +11,7 @@ const services = [
       'Perfect for freelancers, consultants, coaches, teachers, and anyone who wants a professional online presence. Show the world what you do and make it easy for people to reach you.',
     examples: 'Freelancers · Coaches · Teachers · Artists · Consultants',
     color: 'blue',
+    value: 'personal-website',
   },
   {
     icon: HiBriefcase,
@@ -20,6 +21,7 @@ const services = [
       'A professional website for your business that works while you sleep. Customers can find you, learn about your services, book appointments, and contact you — all in one place.',
     examples: 'Restaurants · Salons · Contractors · Retail · Clinics',
     color: 'emerald',
+    value: 'business-website',
   },
   {
     icon: HiDeviceMobile,
@@ -29,6 +31,7 @@ const services = [
       'Turn your business into an app your customers can download. iOS and Android. Great for booking, loyalty programs, ordering, or giving your customers a direct line to you.',
     examples: 'Gyms · Food Trucks · Studios · Service Providers',
     color: 'amber',
+    value: 'mobile-app',
   },
 ]
 
@@ -96,7 +99,7 @@ export default function Services() {
                   <p className="text-sm text-slate-600 font-medium">{service.examples}</p>
                 </div>
                 <a
-                  href="#contact"
+                  href={`/?service=${service.value}#contact`}
                   className={`block text-center ${colors.btn} text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors`}
                 >
                   Get a Quote

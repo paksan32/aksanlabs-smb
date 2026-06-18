@@ -1,9 +1,16 @@
 'use client'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [selectedService, setSelectedService] = useState('')
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const service = params.get('service')
+    if (service) setSelectedService(service)
+  }, [])
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -97,6 +104,8 @@ export default function Contact() {
               <select
                 id="service"
                 name="service"
+                value={selectedService}
+                onChange={(e) => setSelectedService(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
               >
                 <option value="">Select a service...</option>
