@@ -102,7 +102,7 @@ export default function Services() {
                   href={`/?service=${service.value}#contact`}
                   className={`block text-center ${colors.btn} text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors`}
                 >
-                  Get a Quote
+                  Get More Info
                 </a>
               </motion.div>
             )
