@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import { HiUser, HiBriefcase, HiDeviceMobile } from 'react-icons/hi'
+import { HiUser, HiBriefcase, HiDeviceMobile, HiLightBulb } from 'react-icons/hi'
 
 const services = [
   {
@@ -33,6 +33,16 @@ const services = [
     color: 'amber',
     value: 'mobile-app',
   },
+  {
+    icon: HiLightBulb,
+    title: 'I Have an Idea for Something Special',
+    tagline: 'From idea to reality',
+    description:
+      'Got a growing idea in your head but no idea how to build it? We take your vision and turn it into a real technology solution — in days, not months. No tech background needed.',
+    examples: 'AI Tools · Booking Systems · Dashboards · Custom Platforms',
+    color: 'violet',
+    value: 'custom-app',
+  },
 ]
 
 const colorMap = {
@@ -57,6 +67,13 @@ const colorMap = {
     border: 'hover:border-amber-200',
     btn: 'bg-amber-500 hover:bg-amber-600',
   },
+  violet: {
+    bg: 'bg-violet-50',
+    icon: 'bg-violet-100 text-violet-600',
+    tag: 'text-violet-600',
+    border: 'hover:border-violet-200',
+    btn: 'bg-violet-600 hover:bg-violet-700',
+  },
 }
 
 export default function Services() {
@@ -76,7 +93,7 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {services.map((service, i) => {
             const colors = colorMap[service.color as keyof typeof colorMap]
             const Icon = service.icon
