@@ -109,9 +109,18 @@ export default function Contact() {
                 className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
               >
                 <option value="">Select a service...</option>
-                <option value="personal-website">Personal Website</option>
-                <option value="business-website">Business Website</option>
+                <option value="website">Website</option>
                 <option value="mobile-app">Mobile App</option>
+                <option value="company-solution">Company Solution</option>
+                <option value="custom-app">Custom App</option>
+                <option value="ai-chatbot">AI Chatbot</option>
+                <option value="live-chat">Live Chat</option>
+                <option value="lead-gen">Lead Gen</option>
+                <option value="customer-crm">Customer CRM</option>
+                <option value="online-store">Online Store</option>
+                <option value="booking">Booking</option>
+                <option value="ai-workflow">AI Workflow</option>
+                <option value="inventory">Inventory</option>
                 <option value="not-sure">Not sure yet — I need advice</option>
               </select>
             </div>

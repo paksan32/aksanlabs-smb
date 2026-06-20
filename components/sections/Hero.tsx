@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import HowItWorksAnimation from '@/components/HowItWorksAnimation'
 
 export default function Hero() {
   return (
@@ -22,6 +23,8 @@ export default function Hero() {
             We build simple, beautiful websites and apps for small business owners —
             no tech knowledge needed, no confusing jargon, just results.
           </p>
+          <HowItWorksAnimation />
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"

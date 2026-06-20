@@ -11,7 +11,7 @@ const services = [
       'Perfect for freelancers, consultants, coaches, teachers, and anyone who wants a professional online presence. Show the world what you do and make it easy for people to reach you.',
     examples: 'Freelancers · Coaches · Teachers · Artists · Consultants',
     color: 'blue',
-    value: 'personal-website',
+    value: 'website',
   },
   {
     icon: HiBriefcase,
@@ -21,7 +21,7 @@ const services = [
       'A professional website for your business that works while you sleep. Customers can find you, learn about your services, book appointments, and contact you — all in one place.',
     examples: 'Restaurants · Salons · Contractors · Retail · Clinics',
     color: 'emerald',
-    value: 'business-website',
+    value: 'website',
   },
   {
     icon: HiDeviceMobile,
