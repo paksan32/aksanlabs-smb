@@ -4,6 +4,16 @@ import { HiUser, HiBriefcase, HiDeviceMobile, HiLightBulb } from 'react-icons/hi
 
 const services = [
   {
+    icon: HiLightBulb,
+    title: 'I Have an Idea for Something Special',
+    tagline: 'From idea to reality',
+    description:
+      'Got a growing idea in your head but no idea how to build it? We take your vision and turn it into a real technology solution — in days, not months. No tech background needed.',
+    examples: 'AI Tools · Booking Systems · Dashboards · Custom Platforms',
+    color: 'violet',
+    value: 'custom-app',
+  },
+  {
     icon: HiUser,
     title: 'Personal Website',
     tagline: 'Put yourself on the map',
@@ -32,16 +42,6 @@ const services = [
     examples: 'Gyms · Food Trucks · Studios · Service Providers',
     color: 'amber',
     value: 'mobile-app',
-  },
-  {
-    icon: HiLightBulb,
-    title: 'I Have an Idea for Something Special',
-    tagline: 'From idea to reality',
-    description:
-      'Got a growing idea in your head but no idea how to build it? We take your vision and turn it into a real technology solution — in days, not months. No tech background needed.',
-    examples: 'AI Tools · Booking Systems · Dashboards · Custom Platforms',
-    color: 'violet',
-    value: 'custom-app',
   },
 ]
 
