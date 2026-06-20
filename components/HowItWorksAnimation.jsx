@@ -294,8 +294,9 @@ export default function HowItWorksAnimation() {
           </svg>
         </div>
         <p className={styles.sceneText} style={{minHeight:'80px'}}>
-          <strong>What if there was a company</strong> that could turn<br />
-          your amazing idea into <em>any technology<br />solution you can imagine?</em>
+          <strong>What if there was a company</strong> that could<br />
+          turn your amazing idea into<br />
+          <em>any technology solution you can imagine?</em>
         </p>
       </div>
 
