@@ -16,10 +16,16 @@ export default function Contact() {
     e.preventDefault()
     const form = e.currentTarget
     const data = new FormData(form)
-    await fetch('https://formspree.io/f/mrevbrdr', {
+    await fetch('/api/contact', {
       method: 'POST',
-      body: data,
-      headers: { Accept: 'application/json' },
+      body: JSON.stringify({
+        name: data.get('name'),
+        email: data.get('email'),
+        business: data.get('business'),
+        service: data.get('service'),
+        message: data.get('message'),
+      }),
+      headers: { 'Content-Type': 'application/json' },
     })
     setSubmitted(true)
     form.reset()

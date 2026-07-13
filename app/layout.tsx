@@ -7,7 +7,7 @@ import Footer from '@/components/layout/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Aksan Labs — Websites & Apps for Small Business',
+  title: 'AksanLabs — Websites & Apps for Small Business',
   description: 'Simple, affordable websites and mobile apps built for small business owners. No tech knowledge required. Book a free call today.',
 }
 

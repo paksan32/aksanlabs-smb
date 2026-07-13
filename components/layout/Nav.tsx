@@ -7,7 +7,7 @@ export default function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center text-xl font-bold text-brand-navy tracking-tight">
-          Aksan Labs
+          AksanLabs
           <HiChevronRight className="text-brand-red w-5 h-5" />
         </Link>
         <a
