@@ -159,30 +159,30 @@ export default function HowItWorksAnimation() {
         <svg width="160" height="160" viewBox="0 0 160 160" fill="none" style={{overflow:'visible'}}>
           <defs>
             <radialGradient id="hiw-bg1" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#f9a8d4"/>
-              <stop offset="100%" stopColor="#db2777"/>
+              <stop offset="0%" stopColor="#F0A8AC"/>
+              <stop offset="100%" stopColor="#B31F26"/>
             </radialGradient>
           </defs>
           <path d="M36,118 Q22,100 24,78 Q26,56 40,46 Q48,38 60,40 Q63,32 80,32 L80,138 Q56,142 36,118Z" fill="url(#hiw-bg1)" opacity="0">
             <animate attributeName="opacity" from="0" to="1" dur=".6s" begin="0.2s" fill="freeze"/>
           </path>
-          <path d="M124,118 Q138,100 136,78 Q134,56 120,46 Q112,38 100,40 Q97,32 80,32 L80,138 Q104,142 124,118Z" fill="#ec4899" opacity="0">
+          <path d="M124,118 Q138,100 136,78 Q134,56 120,46 Q112,38 100,40 Q97,32 80,32 L80,138 Q104,142 124,118Z" fill="#CE242B" opacity="0">
             <animate attributeName="opacity" from="0" to="1" dur=".6s" begin="0.3s" fill="freeze"/>
           </path>
-          <rect x="78" y="32" width="4" height="106" rx="2" fill="#be185d" opacity="0">
+          <rect x="78" y="32" width="4" height="106" rx="2" fill="#B31F26" opacity="0">
             <animate attributeName="opacity" from="0" to="0.3" dur=".4s" begin="0.4s" fill="freeze"/>
           </rect>
           <g opacity="0">
             <animate attributeName="opacity" from="0" to="1" dur=".4s" begin="0.6s" fill="freeze"/>
-            <path d="M44,58 Q54,52 58,64" stroke="#be185d" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
-            <path d="M38,80 Q50,74 54,86" stroke="#be185d" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
-            <path d="M40,102 Q50,97 53,108" stroke="#be185d" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
+            <path d="M44,58 Q54,52 58,64" stroke="#B31F26" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
+            <path d="M38,80 Q50,74 54,86" stroke="#B31F26" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
+            <path d="M40,102 Q50,97 53,108" stroke="#B31F26" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
           </g>
           <g opacity="0">
             <animate attributeName="opacity" from="0" to="1" dur=".4s" begin="0.6s" fill="freeze"/>
-            <path d="M116,58 Q106,52 102,64" stroke="#9d174d" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
-            <path d="M122,80 Q110,74 106,86" stroke="#9d174d" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
-            <path d="M120,102 Q110,97 107,108" stroke="#9d174d" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
+            <path d="M116,58 Q106,52 102,64" stroke="#B31F26" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
+            <path d="M122,80 Q110,74 106,86" stroke="#B31F26" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
+            <path d="M120,102 Q110,97 107,108" stroke="#B31F26" strokeWidth="2" strokeLinecap="round" fill="none" opacity=".7"/>
           </g>
           <g opacity="0">
             <animate attributeName="opacity" from="0" to="1" dur=".3s" begin="0.7s" fill="freeze"/>
@@ -193,14 +193,14 @@ export default function HowItWorksAnimation() {
             <circle cx="65" cy="89" r="1.2" fill="#fff"/>
             <circle cx="101" cy="89" r="1.2" fill="#fff"/>
           </g>
-          <path d="M64,108 Q80,118 96,108" stroke="#9d174d" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0">
+          <path d="M64,108 Q80,118 96,108" stroke="#B31F26" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0">
             <animate attributeName="opacity" from="0" to="1" dur=".3s" begin="0.8s" fill="freeze"/>
           </path>
           <g opacity="0">
             <animate attributeName="opacity" from="0" to="1" dur=".5s" begin="1.0s" fill="freeze"/>
-            <circle cx="80" cy="22" r="4" fill="#f472b6" opacity=".5"/>
-            <circle cx="80" cy="12" r="3" fill="#f472b6" opacity=".35"/>
-            <circle cx="80" cy="4"  r="2" fill="#f472b6" opacity=".2"/>
+            <circle cx="80" cy="22" r="4" fill="#CE242B" opacity=".5"/>
+            <circle cx="80" cy="12" r="3" fill="#CE242B" opacity=".35"/>
+            <circle cx="80" cy="4"  r="2" fill="#CE242B" opacity=".2"/>
           </g>
         </svg>
         <p className={styles.sceneText}>
