@@ -74,7 +74,7 @@ export default function Contact() {
                   name="name"
                   required
                   placeholder="Jane Smith"
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
                 />
               </div>
               <div>
@@ -85,7 +85,7 @@ export default function Contact() {
                   name="email"
                   required
                   placeholder="jane@yourbusiness.com"
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
                 />
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                 type="text"
                 name="business"
                 placeholder="e.g. Hair salon, landscaping, yoga studio..."
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
               />
             </div>
             <div>
@@ -106,7 +106,7 @@ export default function Contact() {
                 name="service"
                 value={selectedService}
                 onChange={(e) => setSelectedService(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
               >
                 <option value="">Select a service...</option>
                 <option value="website">Website</option>
@@ -131,12 +131,12 @@ export default function Contact() {
                 name="message"
                 rows={4}
                 placeholder="Tell us about your business, what you need, or any questions you have..."
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base resize-none"
               />
             </div>
             <button
               type="submit"
-              className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors duration-200 text-base shadow-sm"
+              className="w-full py-4 bg-brand-red hover:bg-brand-red-dark text-white font-semibold rounded-xl transition-colors duration-200 text-base shadow-sm"
             >
               Send My Message
             </button>

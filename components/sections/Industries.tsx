@@ -42,7 +42,7 @@ export default function Industries() {
 
         <p className="text-slate-600 text-sm text-center mt-10">
           Don&apos;t see your industry?{' '}
-          <a href="#contact" className="text-blue-600 font-semibold hover:underline text-sm">
+          <a href="#contact" className="text-brand-red font-semibold hover:underline text-sm">
             Tell us about your business →
           </a>
         </p>

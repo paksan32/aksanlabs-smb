@@ -20,7 +20,7 @@ const services = [
     description:
       'Perfect for freelancers, consultants, coaches, teachers, and anyone who wants a professional online presence. Show the world what you do and make it easy for people to reach you.',
     examples: 'Freelancers · Coaches · Teachers · Artists · Consultants',
-    color: 'blue',
+    color: 'red',
     value: 'website',
   },
   {
@@ -46,12 +46,12 @@ const services = [
 ]
 
 const colorMap = {
-  blue: {
-    bg: 'bg-blue-50',
-    icon: 'bg-blue-100 text-blue-600',
-    tag: 'text-blue-600',
-    border: 'hover:border-blue-200',
-    btn: 'bg-blue-600 hover:bg-blue-700',
+  red: {
+    bg: 'bg-red-50',
+    icon: 'bg-red-100 text-brand-red',
+    tag: 'text-brand-red',
+    border: 'hover:border-red-200',
+    btn: 'bg-brand-red hover:bg-brand-red-dark',
   },
   emerald: {
     bg: 'bg-emerald-50',

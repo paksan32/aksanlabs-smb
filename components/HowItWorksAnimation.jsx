@@ -268,21 +268,21 @@ export default function HowItWorksAnimation() {
           <svg id="hiw-boxSvg" width="200" height="200" viewBox="0 0 200 200" fill="none" style={{position:'absolute',top:0,left:0,overflow:'visible'}}>
             <defs>
               <linearGradient id="hiw-boxG" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#1e3a5f"/>
-                <stop offset="100%" stopColor="#0f1f38"/>
+                <stop offset="0%" stopColor="#00253D"/>
+                <stop offset="100%" stopColor="#001420"/>
               </linearGradient>
             </defs>
             <g id="hiw-boxBody">
-              <rect x="26" y="100" width="148" height="90" rx="8" fill="url(#hiw-boxG)" stroke="#2563eb" strokeWidth="2"/>
-              <text x="100" y="131" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="12" fontWeight="800" fill="#60a5fa" letterSpacing="1">AKSANLABS</text>
-              <line x1="34" y1="136" x2="166" y2="136" stroke="#1e3a5f" strokeWidth="1"/>
+              <rect x="26" y="100" width="148" height="90" rx="8" fill="url(#hiw-boxG)" stroke="#CE242B" strokeWidth="2"/>
+              <text x="100" y="131" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="12" fontWeight="800" fill="#E1EAEE" letterSpacing="1">AKSANLABS</text>
+              <line x1="34" y1="136" x2="166" y2="136" stroke="#00253D" strokeWidth="1"/>
               <text x="62"  y="170" textAnchor="middle" fontSize="24">⚡</text>
               <text x="100" y="170" textAnchor="middle" fontSize="24">🔧</text>
               <text x="138" y="170" textAnchor="middle" fontSize="24">💡</text>
             </g>
             <g id="hiw-boxLid" style={{transformOrigin:'26px 100px',transform:'rotate(-55deg)'}}>
-              <rect x="22" y="82" width="156" height="22" rx="6" fill="#2563eb"/>
-              <rect x="22" y="82" width="156" height="22" rx="6" stroke="#3b82f6" strokeWidth="1" opacity=".5"/>
+              <rect x="22" y="82" width="156" height="22" rx="6" fill="#CE242B"/>
+              <rect x="22" y="82" width="156" height="22" rx="6" stroke="#E1EAEE" strokeWidth="1" opacity=".5"/>
               <text x="100" y="97" textAnchor="middle" fontFamily="Inter,sans-serif" fontSize="12" fontWeight="800" fill="#fff" letterSpacing="1">AKSANLABS</text>
             </g>
             <g id="hiw-boxSparks" style={{opacity:0}}>

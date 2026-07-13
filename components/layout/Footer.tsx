@@ -6,7 +6,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Aksan Labs. All rights reserved.
         </p>
         <div className="flex items-center gap-6 text-sm text-slate-600">
-          <a href="https://aksanlabs.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+          <a href="https://aksanlabs.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">
             aksanlabs.com
           </a>
         </div>

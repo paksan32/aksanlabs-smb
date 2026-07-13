@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 .dot.on {
-  background: #2563eb;
+  background: #CE242B;
   transform: scale(1.3);
 }
 
@@ -118,7 +118,7 @@
   align-items: center;
   gap: 6px;
   margin-top: 28px;
-  background: #2563eb;
+  background: #CE242B;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
