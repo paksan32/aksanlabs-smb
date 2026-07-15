@@ -18,7 +18,7 @@ const clients = [
     height: 96,
   },
   {
-    name: 'Medicare Mike',
+    name: 'Medicare Michael',
     logo: '/logos/medicare-mike.png',
     url: 'https://www.medicaremichaelinsuranceagent.com',
     width: 88,
