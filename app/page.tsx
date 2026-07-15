@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero'
+import ClientLogos from '@/components/sections/ClientLogos'
 import Services from '@/components/sections/Services'
 import Industries from '@/components/sections/Industries'
 import Faq from '@/components/sections/Faq'
@@ -46,6 +47,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify([...serviceSchemas, faqSchema]) }}
       />
       <Hero />
+      <ClientLogos />
       <Services />
       <Industries />
       <Faq />
