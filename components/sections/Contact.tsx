@@ -5,11 +5,19 @@ import { useState, useEffect } from 'react'
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [selectedService, setSelectedService] = useState('')
+  const [landingPage, setLandingPage] = useState('')
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const service = params.get('service')
     if (service) setSelectedService(service)
+
+    // Niche landing pages link to /?service=...#contact, so by submit time
+    // location.pathname is always "/" — the referring page (if same-origin)
+    // is the real signal for which page actually drove the lead.
+    const referrer = document.referrer
+    const isSameOrigin = referrer && new URL(referrer).origin === window.location.origin
+    setLandingPage(isSameOrigin ? new URL(referrer).pathname : window.location.pathname)
   }, [])
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -24,6 +32,7 @@ export default function Contact() {
         business: data.get('business'),
         service: data.get('service'),
         message: data.get('message'),
+        landing_page: landingPage,
       }),
       headers: { 'Content-Type': 'application/json' },
     })

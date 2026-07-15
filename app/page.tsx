@@ -15,7 +15,7 @@ const serviceSchemas = [
     description: 'A professional personal website for freelancers, consultants, coaches, and teachers who want an online presence.',
     provider: { '@type': 'Organization', name: 'AksanLabs' },
     areaServed: { '@type': 'Country', name: 'United States' },
-    offers: { '@type': 'Offer', priceCurrency: 'USD', price: '499' },
+    offers: { '@type': 'Offer', priceCurrency: 'USD', price: '0', description: 'Free working demo — final price set after you see it' },
   },
   {
     '@context': 'https://schema.org',
@@ -25,7 +25,7 @@ const serviceSchemas = [
     description: 'A professional business website that lets customers find, learn about, and contact or book a small business.',
     provider: { '@type': 'Organization', name: 'AksanLabs' },
     areaServed: { '@type': 'Country', name: 'United States' },
-    offers: { '@type': 'Offer', priceCurrency: 'USD', price: '799' },
+    offers: { '@type': 'Offer', priceCurrency: 'USD', price: '0', description: 'Free working demo — final price set after you see it' },
   },
   {
     '@context': 'https://schema.org',
@@ -35,7 +35,7 @@ const serviceSchemas = [
     description: 'A custom iOS and Android mobile app for a small business, built for booking, ordering, or loyalty programs.',
     provider: { '@type': 'Organization', name: 'AksanLabs' },
     areaServed: { '@type': 'Country', name: 'United States' },
-    offers: { '@type': 'Offer', priceCurrency: 'USD', price: '2499' },
+    offers: { '@type': 'Offer', priceCurrency: 'USD', price: '0', description: 'Free working demo — final price set after you see it' },
   },
 ]
 

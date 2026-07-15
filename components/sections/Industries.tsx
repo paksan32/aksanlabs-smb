@@ -1,15 +1,21 @@
 'use client'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
-const industries = [
-  'Day Care', 'Landscaping', 'Auto Repair', 'Photography', 'Yoga Studio',
-  'Hair Salon', 'Tutoring', 'Restaurant', 'Real Estate', 'Cleaning Service',
-  'Personal Training', 'Event Planning', 'Dog Grooming', 'Tax Preparation',
-  'Catering', 'Music School', 'Nail Salon', 'Bakery', 'Massage Therapy', 'Home Repair',
-  'Plumbing', 'Electrician', 'Pet Grooming', 'Food Truck', 'Boutique',
-  'Gym', 'Dental Office', 'Accounting', 'Insurance Agency', 'Florist',
-  'Childcare', 'Tattoo Studio', 'Barber Shop', 'Law Office', 'HVAC',
-  'Painting', 'Wedding Planning', 'Interior Design', 'Personal Chef', 'Life Coaching',
+const industries: { name: string; href?: string }[] = [
+  { name: 'Day Care', href: '/daycare-website-design' },
+  { name: 'Landscaping', href: '/landscaping-website-design' },
+  { name: 'Auto Repair' }, { name: 'Photography' }, { name: 'Yoga Studio' },
+  { name: 'Hair Salon' }, { name: 'Tutoring' }, { name: 'Restaurant' }, { name: 'Real Estate' }, { name: 'Cleaning Service' },
+  { name: 'Personal Training' }, { name: 'Event Planning' }, { name: 'Dog Grooming' }, { name: 'Tax Preparation' },
+  { name: 'Catering' }, { name: 'Music School' }, { name: 'Nail Salon' }, { name: 'Bakery' }, { name: 'Massage Therapy' }, { name: 'Home Repair' },
+  { name: 'Plumbing' }, { name: 'Electrician' }, { name: 'Pet Grooming' }, { name: 'Food Truck' }, { name: 'Boutique' },
+  { name: 'Gym' }, { name: 'Dental Office' }, { name: 'Accounting' },
+  { name: 'Insurance Agency', href: '/insurance-agent-website-design' },
+  { name: 'Florist' },
+  { name: 'Childcare', href: '/daycare-website-design' },
+  { name: 'Tattoo Studio' }, { name: 'Barber Shop' }, { name: 'Law Office' }, { name: 'HVAC' },
+  { name: 'Painting' }, { name: 'Wedding Planning' }, { name: 'Interior Design' }, { name: 'Personal Chef' }, { name: 'Life Coaching' },
 ]
 
 export default function Industries() {
@@ -30,14 +36,24 @@ export default function Industries() {
         </motion.div>
 
         <div className="flex flex-wrap gap-3 justify-center">
-          {industries.map((item) => (
-            <span
-              key={item}
-              className="px-5 py-2.5 bg-white rounded-full border border-slate-200 text-slate-600 text-sm font-medium shadow-sm"
-            >
-              {item}
-            </span>
-          ))}
+          {industries.map((item) =>
+            item.href ? (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="px-5 py-2.5 bg-white rounded-full border border-slate-200 text-slate-600 text-sm font-medium shadow-sm hover:border-brand-red hover:text-brand-red transition-colors"
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <span
+                key={item.name}
+                className="px-5 py-2.5 bg-white rounded-full border border-slate-200 text-slate-600 text-sm font-medium shadow-sm"
+              >
+                {item.name}
+              </span>
+            )
+          )}
         </div>
 
         <p className="text-slate-600 text-sm text-center mt-10">

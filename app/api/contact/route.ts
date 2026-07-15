@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
 
 export async function POST(request: NextRequest) {
   const body = await request.json()
-  const { name, email, business, service, message } = body
+  const { name, email, business, service, message, landing_page } = body
 
   const res = await fetch(process.env.ADMIN_LEADS_URL!, {
     method: 'POST',
@@ -14,6 +14,7 @@ export async function POST(request: NextRequest) {
       business_type: business,
       service,
       message,
+      landing_page,
     }),
     headers: {
       'Content-Type': 'application/json',

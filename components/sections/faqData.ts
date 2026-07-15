@@ -1,7 +1,7 @@
 export const FAQS = [
   {
     q: 'How much does a website cost for a small business?',
-    a: 'AksanLabs builds personal websites starting from $499 and full business websites starting from $799. Pricing depends on the features you need, like booking, online ordering, or a customer login area. You get an exact quote after your free consultation call.',
+    a: 'AksanLabs doesn\'t set a fixed price upfront — we build you a free working demo first, so you see exactly what you\'d get before any money changes hands. Once you see it, you tell us what you think it\'s worth. After that, the only ongoing cost is a monthly fee that covers hosting, security updates, and keeping your site running smoothly.',
   },
   {
     q: 'Do I need any tech knowledge to get a website or app built?',
@@ -9,7 +9,7 @@ export const FAQS = [
   },
   {
     q: 'Can a small business get a mobile app, not just a website?',
-    a: 'Yes. AksanLabs builds mobile apps for small businesses starting from $2,499, available on both iOS and Android. This is popular for gyms, food trucks, studios, and service providers who want booking, ordering, or loyalty features in their customers\' pockets.',
+    a: 'Yes. AksanLabs builds mobile apps for small businesses for both iOS and Android, starting with a free working demo just like our websites — you see it before you pay anything. This is popular for gyms, food trucks, studios, and service providers who want booking, ordering, or loyalty features in their customers\' pockets.',
   },
   {
     q: 'What is included in a small business website?',

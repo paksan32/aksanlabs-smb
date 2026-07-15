@@ -3,10 +3,9 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
+import { SITE_URL } from '@/lib/site'
 
 const inter = Inter({ subsets: ['latin'] })
-
-const SITE_URL = 'https://smb.aksanlabs.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
