@@ -1,7 +1,8 @@
 import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
 import Industries from '@/components/sections/Industries'
-import Faq, { faqSchema } from '@/components/sections/Faq'
+import Faq from '@/components/sections/Faq'
+import { faqSchema } from '@/components/sections/faqData'
 import Contact from '@/components/sections/Contact'
 
 const serviceSchemas = [
