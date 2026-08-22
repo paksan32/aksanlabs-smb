@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server'
 
 export async function POST(request: NextRequest) {
   const body = await request.json()
-  const { name, email, business, service, message, landing_page } = body
+  const { name, email, phone, business, service, message, landing_page } = body
 
   const res = await fetch(process.env.ADMIN_LEADS_URL!, {
     method: 'POST',
@@ -11,6 +11,7 @@ export async function POST(request: NextRequest) {
       source: 'smb',
       name,
       email,
+      phone,
       business_type: business,
       service,
       message,

@@ -29,6 +29,7 @@ export default function Contact() {
       body: JSON.stringify({
         name: data.get('name'),
         email: data.get('email'),
+        phone: data.get('phone'),
         business: data.get('business'),
         service: data.get('service'),
         message: data.get('message'),
@@ -103,6 +104,17 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
                 />
               </div>
+            </div>
+            <div>
+              <label htmlFor="phone" className="block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                required
+                placeholder="(555) 123-4567"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
+              />
             </div>
             <div>
               <label htmlFor="business" className="block text-sm font-semibold text-slate-700 mb-2">What type of business do you have?</label>

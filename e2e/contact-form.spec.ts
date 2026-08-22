@@ -5,6 +5,7 @@ test.describe('Contact form', () => {
     await page.goto('/#contact')
     await expect(page.locator('#name')).toBeVisible()
     await expect(page.locator('#email')).toBeVisible()
+    await expect(page.locator('#phone')).toBeVisible()
     await expect(page.locator('#business')).toBeVisible()
     await expect(page.locator('#service')).toBeVisible()
     await expect(page.locator('#message')).toBeVisible()
@@ -31,6 +32,15 @@ test.describe('Contact form', () => {
     const isRequired = await nameInput.evaluate((el: HTMLInputElement) => el.required)
     expect(isRequired).toBe(true)
     const isValid = await nameInput.evaluate((el: HTMLInputElement) => el.checkValidity())
+    expect(isValid).toBe(false)
+  })
+
+  test('phone field is required', async ({ page }) => {
+    await page.goto('/#contact')
+    const phoneInput = page.locator('#phone')
+    const isRequired = await phoneInput.evaluate((el: HTMLInputElement) => el.required)
+    expect(isRequired).toBe(true)
+    const isValid = await phoneInput.evaluate((el: HTMLInputElement) => el.checkValidity())
     expect(isValid).toBe(false)
   })
 })
