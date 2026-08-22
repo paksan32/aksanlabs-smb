@@ -5,6 +5,14 @@ export async function POST(request: NextRequest) {
   const body = await request.json()
   const { name, email, phone, business, service, message, landing_page } = body
 
+  const emailValid = typeof email === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())
+  const phoneDigits = typeof phone === 'string' ? phone.replace(/\D/g, '') : ''
+  const phoneValid = phoneDigits.length >= 10 && phoneDigits.length <= 15
+
+  if (!name || !emailValid || !phoneValid) {
+    return NextResponse.json({ error: 'Please provide a valid name, email, and phone number.' }, { status: 400 })
+  }
+
   const res = await fetch(process.env.ADMIN_LEADS_URL!, {
     method: 'POST',
     body: JSON.stringify({

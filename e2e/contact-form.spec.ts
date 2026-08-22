@@ -43,4 +43,28 @@ test.describe('Contact form', () => {
     const isValid = await phoneInput.evaluate((el: HTMLInputElement) => el.checkValidity())
     expect(isValid).toBe(false)
   })
+
+  test('phone field rejects non-numeric garbage via pattern validation', async ({ page }) => {
+    await page.goto('/#contact')
+    const phoneInput = page.locator('#phone')
+    await phoneInput.fill('asdfghjkl')
+    const isValid = await phoneInput.evaluate((el: HTMLInputElement) => el.checkValidity())
+    expect(isValid).toBe(false)
+  })
+
+  test('phone field accepts a properly formatted number', async ({ page }) => {
+    await page.goto('/#contact')
+    const phoneInput = page.locator('#phone')
+    await phoneInput.fill('(555) 123-4567')
+    const isValid = await phoneInput.evaluate((el: HTMLInputElement) => el.checkValidity())
+    expect(isValid).toBe(true)
+  })
+
+  test('email field rejects an address with no domain TLD via pattern validation', async ({ page }) => {
+    await page.goto('/#contact')
+    const emailInput = page.locator('#email')
+    await emailInput.fill('jane@business')
+    const isValid = await emailInput.evaluate((el: HTMLInputElement) => el.checkValidity())
+    expect(isValid).toBe(false)
+  })
 })

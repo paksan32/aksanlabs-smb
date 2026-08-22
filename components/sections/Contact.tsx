@@ -6,6 +6,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [selectedService, setSelectedService] = useState('')
   const [landingPage, setLandingPage] = useState('')
+  const [error, setError] = useState('')
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
@@ -24,7 +25,8 @@ export default function Contact() {
     e.preventDefault()
     const form = e.currentTarget
     const data = new FormData(form)
-    await fetch('/api/contact', {
+    setError('')
+    const res = await fetch('/api/contact', {
       method: 'POST',
       body: JSON.stringify({
         name: data.get('name'),
@@ -37,6 +39,10 @@ export default function Contact() {
       }),
       headers: { 'Content-Type': 'application/json' },
     })
+    if (!res.ok) {
+      setError('Please double check your email and phone number, then try again.')
+      return
+    }
     setSubmitted(true)
     form.reset()
   }
@@ -100,6 +106,8 @@ export default function Contact() {
                   type="email"
                   name="email"
                   required
+                  pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                  title="Enter a valid email address, e.g. jane@yourbusiness.com"
                   placeholder="jane@yourbusiness.com"
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
                 />
@@ -112,6 +120,9 @@ export default function Contact() {
                 type="tel"
                 name="phone"
                 required
+                inputMode="tel"
+                pattern="[0-9()+\-\s]{10,20}"
+                title="Enter a valid phone number with at least 10 digits"
                 placeholder="(555) 123-4567"
                 className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
               />
@@ -161,6 +172,9 @@ export default function Contact() {
                 className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base resize-none"
               />
             </div>
+            {error && (
+              <p className="text-center text-sm text-brand-red font-medium">{error}</p>
+            )}
             <button
               type="submit"
               className="w-full py-4 bg-brand-red hover:bg-brand-red-dark text-white font-semibold rounded-xl transition-colors duration-200 text-base shadow-sm"
