@@ -121,7 +121,7 @@ export default function Contact() {
                 name="phone"
                 required
                 inputMode="tel"
-                pattern="[0-9()+\-\s]{10,20}"
+                pattern="[0-9\(\)+\-\s]{10,20}"
                 title="Enter a valid phone number with at least 10 digits"
                 placeholder="(555) 123-4567"
                 className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-transparent text-base"
